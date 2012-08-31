@@ -21,7 +21,13 @@ group :assets do
 
 end
 
+group :test do
+  gem 'factory_girl_rails'
+end
+
 gem 'jquery-rails'
+
+gem 'carrierwave'
 
 # To use ActiveModel has_secure_password
 # gem 'bcrypt-ruby', '~> 3.0.0'
