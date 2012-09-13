@@ -1,25 +1,9 @@
 require 'test_helper'
 
 class ImageTest < ActiveSupport::TestCase
-  # test "the truth" do
-  #   assert true
-  # end
 
   def setup
-    if defined?(CarrierWave)
-      CarrierWave::Uploader::Base.descendants.each do |klass|
-        next if klass.anonymous?
-        klass.class_eval do
-          def cache_dir
-            "#{Rails.root}/test/temp/uploads/tmp"
-          end
-
-          def store_dir
-            "#{Rails.root}/test/temp/uploads/#{model.class.to_s.underscore}/#{mounted_as}/#{model.id}"
-          end
-        end
-      end
-    end
+    init_carrierwave_for_tests
   end
 
   test "create image" do
