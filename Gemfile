@@ -12,18 +12,23 @@ gem 'sqlite3'
 # in production environments by default.
 group :assets do
 
-  gem 'sass-rails',   '~> 3.2.3'
+  gem 'sass-rails', '~> 3.2.3'
   gem 'coffee-rails', '~> 3.2.1'
 
-  gem 'therubyracer', :platforms => :ruby
+  gem 'therubyracer', platforms: :ruby
 
   gem 'uglifier', '>= 1.0.3'
 
+  gem 'backbone-on-rails'
+  gem 'handlebars_assets'
+
 end
 
-group :test do
-  gem 'factory_girl_rails'
-end
+#group :test do
+#  gem 'factory_girl_rails'
+#end
+
+gem 'factory_girl_rails', require: false
 
 gem 'jquery-rails'
 

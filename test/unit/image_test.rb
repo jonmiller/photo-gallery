@@ -2,10 +2,6 @@ require 'test_helper'
 
 class ImageTest < ActiveSupport::TestCase
 
-  def setup
-    init_carrierwave_for_tests
-  end
-
   test "create image" do
 
     image = FactoryGirl.build(:image)
@@ -15,7 +11,7 @@ class ImageTest < ActiveSupport::TestCase
     Rails.logger.debug "image.file.url (before save) = #{image.file.url}"
     Rails.logger.debug "image.file.store_dir (before save) = #{image.file.store_dir}"
 
-    image.save
+    assert image.save
 
     assert_not_nil image.file
     assert_not_nil image.file.url
