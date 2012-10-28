@@ -22,17 +22,17 @@ group :assets do
   gem 'backbone-on-rails'
   gem 'handlebars_assets'
 
-end
+  gem 'twitter-bootstrap-rails'
 
-#group :test do
-#  gem 'factory_girl_rails'
-#end
+end
 
 gem 'factory_girl_rails', require: false
 
 gem 'jquery-rails'
 
+gem 'rmagick'
 gem 'carrierwave'
+
 
 # To use ActiveModel has_secure_password
 # gem 'bcrypt-ruby', '~> 3.0.0'

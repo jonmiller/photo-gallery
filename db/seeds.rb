@@ -8,4 +8,6 @@
 
 require 'factory_girl_rails'
 
-FactoryGirl.create(:image)
+10.times { FactoryGirl.create(:image_forest) }
+
+10.times { FactoryGirl.create(:image_flatirons) }

@@ -3,7 +3,7 @@ ImagesRails::Application.routes.draw do
   root to: "main#index"
 
   scope "api" do
-    resources :entries
+    resources :images
   end
 
   # The priority is based upon order of creation:
