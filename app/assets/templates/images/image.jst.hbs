@@ -1,3 +1,10 @@
-<a class='thumbnail'>
+<a class='thumbnail' data-toggle='modal' data-target='#modal-image-{{image.id}}'>
   <img src='{{image.file.thumb_200.url}}' alt=''>
 </a>
+
+<div id='modal-image-{{image.id}}' class='modal hide'>
+  <div class='modal-body'>
+    <img src='{{image.file.url}}' alt=''>
+  </div>
+</div>
+
