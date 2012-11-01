@@ -16,6 +16,7 @@
 //= require underscore
 //= require backbone
 //= require handlebars
+//= require jquery-fileupload/basic
 //
 //= require .//images_rails
 //

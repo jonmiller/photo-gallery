@@ -2,6 +2,8 @@ class ImagesRails.Views.ImagesIndex extends Backbone.View
 
   template: JST['images/index']
 
+  events: 'submit #new-image': 'createImage'
+
   initialize: ->
     @collection.on('reset', @render, this)
 
@@ -14,3 +16,7 @@ class ImagesRails.Views.ImagesIndex extends Backbone.View
     console.log JSON.stringify image.toJSON()
     view = new ImagesRails.Views.Image(model: image.toJSON())
     $('#images-grid').append(view.render().el)
+
+  createImage: (event) ->
+    event.preventDefault()
+

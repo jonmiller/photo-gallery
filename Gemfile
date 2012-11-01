@@ -23,6 +23,7 @@ group :assets do
   gem 'handlebars_assets'
 
   gem 'twitter-bootstrap-rails'
+  gem 'jquery-fileupload-rails'
 
 end
 
