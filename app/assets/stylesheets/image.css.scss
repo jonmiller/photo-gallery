@@ -1,3 +1,13 @@
 // Place all the styles related to the image controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+
+#images-modal {
+  max-width: 800px;
+  margin: -330px 0 0 -400px;
+}
+
+#images-modal .modal-body {
+  max-height: 600px
+}
+
