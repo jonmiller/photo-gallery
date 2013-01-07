@@ -1,1 +1,9 @@
-<div id="container">Loading...</div>
+<div id='navigation-pane'>
+</div>
+
+<div class='container'>
+  <div class='row'>
+    <%= content_tag "div", id: "content-pane", class: "span12", data: {images: Image.all} do %>
+    <% end %>
+  </div>
+</div>

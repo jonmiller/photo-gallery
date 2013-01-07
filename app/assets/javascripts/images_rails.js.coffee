@@ -4,8 +4,9 @@ window.ImagesRails =
   Views: {}
   Routers: {}
   init: ->
-    new ImagesRails.Routers.Images
+    this.Routers.Images = new ImagesRails.Routers.Images
     Backbone.history.start()
 
 $(document).ready ->
   ImagesRails.init()
+
