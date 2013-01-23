@@ -1,9 +1,8 @@
 require 'test_helper'
 
-class ImageControllerTest < ActionController::TestCase
+class ImagesControllerTest < ActionController::TestCase
   test "should get index" do
-    get :index
+    get :index, {format: "json"}
     assert_response :success
   end
-
 end
