@@ -15,7 +15,8 @@ group :assets do
   gem 'sass-rails', '~> 3.2.3'
   gem 'coffee-rails', '~> 3.2.1'
 
-  gem 'therubyracer', platforms: :ruby
+  gem 'therubyracer', require: 'v8'
+#  gem 'libv8'
 
   gem 'uglifier', '>= 1.0.3'
 
@@ -24,6 +25,8 @@ group :assets do
 
   gem 'twitter-bootstrap-rails'
   gem 'jquery-fileupload-rails'
+
+  gem 'less-rails'
 
 end
 
