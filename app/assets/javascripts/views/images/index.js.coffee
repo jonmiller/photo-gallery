@@ -1,4 +1,4 @@
-class ImagesRails.Views.ImagesIndex extends Backbone.View
+class PhotoGallery.Views.ImagesIndex extends Backbone.View
 
   template: JST['images/index']
 
@@ -12,6 +12,6 @@ class ImagesRails.Views.ImagesIndex extends Backbone.View
     return this
 
   appendImage: (image) =>
-    view = new ImagesRails.Views.Image(model: image.toJSON())
+    view = new PhotoGallery.Views.Image(model: image.toJSON())
     @$('#images-grid').append(view.render().el)
 

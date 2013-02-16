@@ -1,5 +1,5 @@
-class ImagesRails.Collections.Images extends Backbone.Collection
+class PhotoGallery.Collections.Images extends Backbone.Collection
 
-  model: ImagesRails.Models.Image
+  model: PhotoGallery.Models.Image
 
   url: '/api/images'

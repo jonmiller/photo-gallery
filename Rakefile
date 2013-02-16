@@ -4,4 +4,4 @@
 
 require File.expand_path('../config/application', __FILE__)
 
-ImagesRails::Application.load_tasks
+PhotoGallery::Application.load_tasks

@@ -18,7 +18,7 @@
 //= require handlebars
 //= require jquery-fileupload/basic
 //
-//= require .//images_rails
+//= require .//photo_gallery
 //
 //= require_tree ../templates/
 //= require_tree .//models

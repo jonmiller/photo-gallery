@@ -1,12 +1,12 @@
-window.ImagesRails =
+window.PhotoGallery =
   Models: {}
   Collections: {}
   Views: {}
   Routers: {}
   init: ->
-    this.Routers.Images = new ImagesRails.Routers.Images
+    this.Routers.Images = new PhotoGallery.Routers.Images
     Backbone.history.start()
 
 $(document).ready ->
-  ImagesRails.init()
+  PhotoGallery.init()
 

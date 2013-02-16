@@ -1,4 +1,4 @@
-class ImagesRails.Views.Tabs extends Backbone.View
+class PhotoGallery.Views.Tabs extends Backbone.View
 
     template: JST['tabs/tabs']
 
@@ -12,5 +12,5 @@ class ImagesRails.Views.Tabs extends Backbone.View
 
     navigateTab: (e) ->
       e.preventDefault()
-      ImagesRails.Routers.Images.navigate(e.target.dataset.url, true)
+      PhotoGallery.Routers.Images.navigate(e.target.dataset.url, true)
 

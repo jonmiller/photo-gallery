@@ -1,4 +1,4 @@
-ImagesRails::Application.routes.draw do
+PhotoGallery::Application.routes.draw do
   
   root to: "main#index"
 

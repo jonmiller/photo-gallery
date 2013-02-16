@@ -1,1 +1,1 @@
-class ImagesRails.Models.Image extends Backbone.Model
+class PhotoGallery.Models.Image extends Backbone.Model

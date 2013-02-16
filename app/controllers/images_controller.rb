@@ -11,6 +11,7 @@ class ImagesController < ApplicationController
   end
 
   def create
+      logger.debug "ImagesController::create"
     @image = Image.new(file: params[:image])
     @image.save
     respond_with @image
